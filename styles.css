@@ -1,0 +1,764 @@
+:root {
+  --textColor: #272323;
+  --textSmColor: #595959;
+  --btnInitialColor: #FFFFFF;
+  --bgBtnInitialColor: #3cccde;
+  --bgGray: #eeeeee;
+  --headingSizeL: 42px;
+  --headingSizeM: 38px;
+  --headingSizeSm: 30px;
+  --headingSizeXsm: 22px; 
+  --textFont: 'Nunito Sans';
+  --textRegular: 400;
+  --textSemiBold: 600;
+  --textBold: 700;
+  --textSemiBoldItalic: italic;
+}
+
+body {
+  font-family: var(--textFont, sans-serif);
+  color: var(--textColor, #2b2727);
+  line-height: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 30px;
+  letter-spacing: 0.5px;
+  color: var(--textSmColor);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+    font-size: var(--headingSizeM);
+    font-weight: var(--textSemiBold);
+    color: var(--textColor);
+    line-height: 1.2;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.sticky {
+  position: sticky; 
+  top: 0; 
+  left:0;
+  width: 100%; 
+  background-color: white; 
+  z-index: 9999
+} 
+
+.about {
+  padding: 107px 0;
+}
+
+.about .container__inner h2 {
+  margin-bottom: 20px;
+}
+
+.rounded-image {
+  border-radius: 10px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.logo__image {
+  width: 234px;
+  height: 89px;
+}
+
+.logo__link {
+  display: block;
+}
+
+.site-header {
+  width: 100%;
+  padding: 5px 0;
+  background-color: var(--btnInitialColor);
+
+}
+
+ 
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav__link {
+  transition: all 0.3s ease-in 0s;
+}
+
+.nav__link {
+  margin-left: 32px;
+}
+
+.btn {
+  background-color: var(--bgBtnInitialColor);  
+  border-radius: 3px;
+  color:var(--btnInitialColor);
+  padding: 9px 23px;
+  text-decoration: none;
+  font-weight: var(--textSemiBold);
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #38becf;  
+  border-radius: 3px;
+  color:var(--btnInitialColor);
+  padding: 9px 23px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in 0s;
+}
+
+.nav__link:hover:not(:last-child) {
+  color: var(--bgBtnInitialColor);
+}
+
+.intro {
+  height: 570px;
+  background-image: linear-gradient(to bottom, #ffffff00, #000000bf), url('./images/Background1.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.intro-content {
+  height: 315px;
+  background-image: linear-gradient(to bottom, #ffffff00, #000000bf), url('./images/Background1.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.intro .container__inner {
+  padding-right: 65px;
+  padding-bottom: 70px;
+}
+
+.intro h1 {
+  line-height: 1;
+}
+
+.section__title {
+  color: var(--btnInitialColor);
+  font-size: var(--headingSizeL);
+  font-weight: var(--textSemiBold);
+  margin-top: 0;
+}
+
+
+.treatments {
+  background-color: var(--bgGray);
+  padding: 107px 0;
+  color: var(--textSmColor);
+}
+
+.header-info {
+  text-align: center;
+}
+
+.header-info h2 {
+  color: var(--textColor);
+  font-size: var(--headingSizeSm);
+  font-weight: var(--textSemiBold);
+}
+
+.grid h3 {
+  color: var(--textColor);
+  font-size: var(--headingSizeXsm);
+  font-weight: var(--textSemiBold);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-column-gap: 30px;
+  place-items: center;
+  margin: 50px 0 35px 0;
+}
+
+
+.box {
+  width: 370px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.box:hover {
+  width: 370px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 50px;
+  background-color: var(--btnInitialColor);
+  border-radius: 10px;
+  transition: all 0.3s ease-in 0s;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+}
+
+.box-icons {
+  margin-bottom: 30px;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 552px 1fr;
+  justify-items: end;
+  align-items: center;
+  grid-gap: 130px;
+}
+
+.container__inner {
+  color: var(--textSmColor);
+}
+
+.intro .conntainer__inner {
+  padding-right: 65px;
+}
+
+
+.container__inner p {
+  font-size: 16px;
+  font-weight: var(--textRegular);
+}
+
+.info-dentist {
+  padding: 125px 0 105px 0;
+}
+
+.info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 530px;
+  grid-gap: 100px
+}
+
+.content-image {
+  border-radius: 10px;
+}
+
+.info-links {
+  color: var(--bgBtnInitialColor);
+  text-decoration: underline;
+}
+
+.container__inner h2 {
+  font-size: var(--headingSizeM);
+  font-weight: var(--textSemiBold);
+  color: var(--textColor);
+  margin: 0;
+}
+
+
+.container__inner h3 {
+  font-size: var(--headingSizeSm);
+  font-weight: var(--textSemiBold);
+  color: var(--textColor);
+  margin-bottom: 15px;
+}
+
+.info-dentist-bold {
+  font-weight: var(--textSemiBold);
+  font-style: var(--textSemiBoldItalic);
+  color: var(--textColor);
+}
+
+.team {
+  background-color: var(--bgGray);
+  padding: 110px 0 89px 0;
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+  text-align: center;
+  margin: 40px 0;
+}
+
+.container-btn {
+  text-align: center;
+
+}
+
+.round-headings {
+  margin: 0;
+}
+
+.header-info h2 {
+  font-size: var(--headingSizeM);
+  font-weight: var(--textSemiBold);
+  color: var(--textColor);
+  margin: 0 0 29px 0 ;
+}
+
+.contact {
+  padding: 100px 0;
+  background-color: #e6eaed;
+}
+
+.header-info p {
+  font-size: 17px;
+}
+
+.contact .header-info {
+  margin-bottom: 50px;
+}
+
+.form-flex {
+  max-width: 66%;
+  margin: 0 auto;
+  font-weight: var(--textSemiBold);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-area {
+  width: 370px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0 30px 0;
+}
+
+
+textarea {
+  outline: none;
+  resize: none;
+  border:1px solid #999999;
+  width:100%;
+  height: 155px;
+  margin: 10px 0;
+  padding: 3px;
+  border: none;
+  border-radius: 3px;
+
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:hover, textarea:hover, select:hover {
+  background-color: rgb(248, 248, 248);
+  border: solid 2.5px white;
+  transition: background-color 0.3s ease-in 0s;
+}
+
+input:focus, textarea:focus, select:focus {
+  background-color: white;
+  border: solid 2.5px #33ccdd;
+  transition: background-color 0.3s ease-in 0s;
+}
+
+
+.textarea {
+  padding-bottom: 30px;
+  outline: none;
+  border: none;
+}
+
+select {
+  color: var(--textSmColor);
+  font-weight: var(--textRegular);
+  font-size: 14px;
+  padding: 0 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("https://img.icons8.com/material-outlined/24/000000/expand-arrow--v2.png");
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: 50%;
+}
+
+.site-footer {
+  background-color: #272323;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 250px 1fr 275px 1fr;
+  grid-gap: 30px;
+  padding: 85px 0;
+}
+
+
+.footer__title {
+  font-weight: var(--textSemiBold);
+  font-size: var(--headingSizeXsm);
+  color: var(--btnInitialColor);
+}
+
+.footer__text {
+  font-weight: var(--textRegular);
+  font-size: 15px;
+  color: #a9a9a9;
+} 
+
+.footer__text p {
+  font-weight: var(--textRegular);
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+.footer__logo {
+  width: 100%;
+  height: auto;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__links {
+
+  margin: 0 11px 0 0;
+
+}
+
+.footer-link__images {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bgBtnInitialColor);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  font-weight: var(--textRegular);
+  color: #a9a9a9;
+  line-height: 1.5;
+}
+
+.footer-list__link {
+  text-decoration: none;
+  color: var(--bgBtnInitialColor);
+}
+
+.copyright {
+  background-color: var(--btnInitialColor);
+  padding: 40px 0 30px 0;
+}
+
+.copyright__text {
+  font-weight: var(--textBold);
+  font-size: 15px;
+  text-align: center;
+  color: var(--textColor);
+}
+
+.copyright__text__regular {
+ font-weight: var(--textRegular);
+  display: inline;
+}
+
+.btn-submit {
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  padding: 17px 32px;
+}
+
+.btn-submit:hover {
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  padding: 17px 32px;
+  background-color: #38becf;  
+  transition: all 0.3s ease-in 0s;
+}
+
+.row-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2 {
+  width: 420px;
+  margin-bottom: 25px;
+}
+
+.row-link {
+  color: var(--bgBtnInitialColor);
+  font-weight: var(--textRegular);
+}
+
+.row-btn a {
+  color: white;
+}
+
+
+.about-dentist {
+  background-color: var(--bgGray);
+  padding: 98px 0 112px 0;
+}
+
+.about-dentist-wrapper {
+  display: grid;
+  grid-template-columns: 552px 1fr;
+}
+
+.col-about-dentist {
+  padding-top: 31px;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--bgBtnInitialColor);
+  border-radius: 10px;
+}
+
+/* Media queris */
+
+@media (max-width: 1200px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .site-header__wrapper {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .nav__link {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .logo__image {
+    width: 200px;
+    height: auto;
+  }
+
+  .about-wrapper {
+    display: block;
+    padding: 0 20px;
+  }
+
+
+  .col-6 {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+
+  .intro {
+    height: 300px;
+  }
+
+  .intro .container__inner {
+    padding-right: 65px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  .container__inner .section__title {
+    font-size: 30px;
+  }
+
+
+  .info-wrapper {
+    padding: 0 20px;
+  }
+
+  .team {
+    padding: 50px 20px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .btn:hover {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+
+
+  .footer__inner {
+    display: block;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-flex {
+    max-width: 77%;
+  }
+
+  .info-wrapper {
+    display: block;
+  }
+
+  .nav__link:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .nav__link:hover {
+    padding-bottom: 15px;
+    color: var(--bgBtnInitialColor);
+  }
+
+  .nav__link:active {
+    padding-bottom: 15px;
+    color: var(--bgBtnInitialColor);
+  }
+
+  .about, .treatments, .info-dentist, .team, .contact {
+    padding: 60px 0;
+  }
+
+}
+
+
+@media (max-width: 812px) {
+  .intro {
+    height: 280px;
+  }
+
+  .intro .container__inner {
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  .col-5 {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .rounded-image {
+    width: 100%;
+  }
+
+
+  .form-flex {
+    max-width: 85%;
+  }
+
+  .row-2 {
+    width: 100%;
+  }
+
+  .about-dentist {
+    padding: 0;
+  }
+
+  .about-dentist-wrapper {
+    padding: 0 20px;
+    display: block;
+  }
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .grid-team .round {
+    margin-bottom: 20px;
+  }
+
+} 
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-area{
+    width: 620px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about, .treatments, .info-dentist, .team, .contact {
+    padding: 45px 0;
+  }
+
+  .form-area{
+    width: 317px;
+  }
+
+  
+}
